@@ -1,15 +1,23 @@
 {
   "name": "express_routes_first",
   "version": "1.0.0",
-  "description": "",
+  "description": "* This repo includes starter code, so be sure to **clone** this repo.  You **do not need to fork it**.  (Why?  See if you can figure out why.)",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
-  }
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/nabiladigo/express-create-lab.git"
+  },
+  "keywords": []
 }
