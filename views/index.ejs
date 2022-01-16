@@ -9,7 +9,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
         />
-    <link rel="stylesheet" href="../public/styles/main.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
 
     <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -25,27 +25,30 @@
     <body class="has-navbar-fixed-top">
         <!-- https://bulma.io/documentation/components/navbar/#fixed-navbar -->
         <nav
-        class="navbar is-dark is-fixed-top"
-        role="navigation"
-        aria-label="main navigation"
-        >
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/products"> All Products </a>
+      class="navbar is-dark is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/products"> All Products </a>
 
-                <a
-                    role="button"
-                    class="navbar-burger"
-                    aria-label="menu"
-                    aria-expanded="false"
-                    data-target="navbarBasicExample"
-                >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                </a>
-            </div>
-    
-        </nav>
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <!-- this will add a link to the new route -->
+      <div class="navbar-menu navbar-end">
+        <a class="navbar-item" href="/products/new"> New Product </a>
+      </div>
+    </nav>
 
         <section class="hero is-medium has-background-light">
             <div class="hero-body">
@@ -55,8 +58,8 @@
 
         <main class="container is-max-widescreen">
             <div class="columns is-multiline p-5">
-                <% for(let idx = 0; idx < products.length; idx++){ %> 
-                    <% const product = products[idx] %>
+                <% for(let idx = 0; idx < products.length; idx++){ %> <% const product =
+                products[idx] %>
 
             <div class="column is-one-third">
                 <article class="card">
