@@ -5,98 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
-    />
     <link rel="stylesheet" href="/styles/main.css" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="/scripts/bulma.js" defer></script>
+    <script src="/scripts/bootstrap.js" defer></script>
     <script src="/scripts/main.js" defer></script>
 
     <title>SellItUp</title>
-  </head>
-  <body class="has-navbar-fixed-top">
-    <!-- https://bulma.io/documentation/components/navbar/#fixed-navbar -->
-    <nav
-    class="navbar is-dark is-fixed-top"
-    role="navigation"
-    aria-label="main navigation"
-  >
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/products"> All Products </a>
-
-      <a
-        role="button"
-        class="navbar-burger"
-        aria-label="menu"
-        aria-expanded="false"
-        data-target="navbarBasicExample"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <!-- this will add a link to the new route -->
-    <div class="navbar-menu navbar-end">
-      <a class="navbar-item" href="/products/new"> New Product </a>
-    </div>
-  </nav>
+</head>
+    <body >
+      
 
 
 
-    <section class="hero is-medium has-background-light">
-      <div class="hero-body">
-        <h1 class="title">New Product Page</h1>
-      </div>
-    </section>
-    <section class="container is-max-widescreen p-5">
-      <!--  NOTE: action will be the route, method will be the HTTP verb-->
-      <form action="/products" method="POST">
-        <div class="field">
-          <label class="label">Product Name</label>
-          <div class="control">
-            <input
-              class="input"
-              type="text"
-              placeholder="Super Cool Product"
-              name="name"
-            />
+      <!-- <nav class="navbar navbar-expand-lg navbar-light bg-primry">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
           </div>
         </div>
+      </nav> -->
+        <!-- <div class="body-wrap">
+            <div class="container">
+              <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                  </div>-->
+          
+                  <!-- Collect the nav links, forms, and other content for toggling -->
+                  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Link</a></li>
+                      <li><a href="#">Link</a></li>
+                  
+                        
+                  </div>
+                  <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+              </nav>
+            </div>
+          </div> -->
+        <section class="hero is-medium has-background-light">
+            <div class="hero-body">
+            <h1 class="title">New Product Page</h1>
+            </div>
+        </section>
 
-        <div class="field">
-          <label class="label">Product Price</label>
-          <div class="control">
-            <input class="input" type="number" placeholder="32" name="price" />
-          </div>
-        </div>
+        <form action="/action_page.php">
+            <div class="mb-10 mt-10">
+                <label for="product-name" class="form-label">Product Name</label>
+                <input type="text" class="form-control"  placeholder="Enter product name">
+            </div>
+            <div class="mb-10 mt-10">
+                <label for="product-price">Product Price</label>
+                <input type="number"   placeholder="$00">
+            </div>
+            <div class="mb-10 mt-10" >
+                <label for="image" class="img-circle">Product Image</label>
+                <input type="text" placeholder="http://">
+            </div>
+            <button type="submit" class="btn btn-default">Create Product</button>
+        </form>
 
-        <div class="field">
-          <label class="label">Product Image</label>
-          <div class="control">
-            <input
-              class="input"
-              type="text"
-              placeholder="http://"
-              name="image"
-            />
-          </div>
-        </div>
-
-        <div class="field is-grouped">
-          <div class="control">
-            <button class="button is-info">Create Product</button>
-          </div>
-        </div>
-      </form>
-    </section>
-  </body>
+    </body>
 </html>
