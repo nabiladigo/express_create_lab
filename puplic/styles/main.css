@@ -1,0 +1,9 @@
+li{
+display: inline;
+float: left;
+}
+nav{
+    display:block;
+    padding: 8px;
+    background-color: #807b7b;
+}

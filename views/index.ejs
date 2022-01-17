@@ -7,45 +7,27 @@
 
         <link rel="stylesheet" href="/styles/main.css" />
 
-        <script src="/scripts/bootstrap.js" defer></script>
-        <script src="/scripts/main.js" defer></script>
-
         <title>SellItUp</title>
     </head>
-    <body class="has-navbar-fixed-top">
-        <!-- https://bulma.io/documentation/components/navbar/#fixed-navbar -->
 
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark p-md-3">
-            <div class="container-fluid">
-                <!-- <div class="navbar-header"> -->
-                    <a herf="#" class="navbar-brand">All Products</a>
-                    <button 
-                        type="button"
-                        class="navbar-toggle"
-                        data-bs-target="#navbarNav"
-                        data-bs-toggle="collapse"
-                        aria-controls="navbarNav"
-                        aria-expanded="false"
-                        aria-label="Toggle Navbar">
-                        <span class="navbar-toggle-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <div class="mx-auto">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="/products" class="nav-link text-white">products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="/products/new" class="nav-link text-white">New Products</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
-                <!-- </div> -->
-            
-                
-            </div>
-        </nav>
+    <body >
+       
+
+        <nav class="navbar ">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/products"> All Products </a>
+        
+            <a class="navbar-burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-menu ">
+          <a class="navbar-item" href="/products/new"> New Product </a>
+        </div>
+      </nav>
 
         <main class="">
             <div class="">
